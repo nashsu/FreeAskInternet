@@ -1,0 +1,41 @@
+services:
+  backend:
+    image: docker.io/nashsu/free_ask_internet:latest
+    depends_on:
+      - freegpt35
+    restart: on-failure
+ 
+
+  chatgpt-next-web:
+    image: yidadaa/chatgpt-next-web
+    ports:
+      - "3000:3000"
+    environment:
+      OPENAI_API_KEY: "FreeAskInternet"
+      # CODE: "FreeAskInternet" # 如果你想要设置页面的访问密码，请修改这里
+      BASE_URL: "http://backend:8000"
+      CUSTOM_MODELS: "-all,+gpt-3.5-turbo"
+    depends_on:
+      - freegpt35
+
+  freegpt35:
+    image: missuo/freegpt35:latest
+    restart: always
+
+  searxng:
+    image: docker.io/searxng/searxng:latest
+    volumes:
+      - ./searxng:/etc/searxng:rw
+    environment:
+      - SEARXNG_BASE_URL=https://${SEARXNG_HOSTNAME:-localhost}/
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '1m'
+        max-file: '1'
