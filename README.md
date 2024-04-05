@@ -44,6 +44,17 @@ docker-compose up
 🎉 You should now be able to open the web interface on http://localhost:3000. Nothing else is exposed by default.
 
 
+### How to update to latest 
+
+```bash
+cd ./FreeAskInternet
+git pull
+docker compose rm backend
+docker image rm nashsu/free_ask_internet
+docker-compose up 
+```
+ 
+
 
 ## Credits
 - ChatGPT-Next-Web : [https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
