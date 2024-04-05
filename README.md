@@ -6,6 +6,8 @@
 ## What is FreeAskInternet
 FreeAskInternet is a completely free, private and locally running search aggregator & answer generate using LLM, Without GPU needed. The user can ask a question and the system will use searxng to make a multi engine search and combine the search result to the ChatGPT3.5 LLM and generate the answer based on search results. All process running locally and  No GPU or OpenAI or Google API keys are needed.
 
+
+
 ## Features 
 
 - 🈚️ Completely FREE (no need for any API keys)
@@ -15,6 +17,12 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 - 🤩 Using Free ChatGPT3.5 API (NO API keys need! Thx OpenAI)
 - 🚀 Fast and easy to deploy with Docker Compose
 - 🌐 Web adn Mobile friendly interface, allowing for easy access from any device ( Thx ChatGPT-Next-Web )
+
+## How It Works? 
+
+1. System get user input question in ChatGPT-Next-Web ( running locally), and call searxng (running locally) to make search on multi search engine.
+2. crawl search result links content and pass to ChatGPT3.5 (using OpenAI ChatGPT3.5, through FreeGPT35 running locally), ask ChatGPT3.5 to answer user question based on this contents as references.
+3. Stream the answer to ChatGPT-Next-Web Chat UI.
 
 ## Status 
 
