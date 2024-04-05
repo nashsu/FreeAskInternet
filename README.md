@@ -1,7 +1,11 @@
 # FreeAskInternet
 
+
 > Running www.perplexity.ai like app complete FREE, LOCAL, PRIVATE and NO GPU NEED on any computer
 
+
+> [!IMPORTANT]  
+> **If you are unable to use this project normally, it is most likely due to issues with your internet connection or your IP, you need free internet connection to use this project normally. 如果您无法正常使用此项目，很可能是由于您的 IP 存在问题，或者你不能自由访问互联网。**
 
 ## What is FreeAskInternet
 FreeAskInternet is a completely free, private and locally running search aggregator & answer generate using LLM, Without GPU needed. The user can ask a question and the system will use searxng to make a multi engine search and combine the search result to the ChatGPT3.5 LLM and generate the answer based on search results. All process running locally and  No GPU or OpenAI or Google API keys are needed.
