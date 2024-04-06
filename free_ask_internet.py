@@ -169,7 +169,7 @@ def ask_internet(query:str,  debug=False):
     content_list = search_web_ref(query,debug=debug)
     if debug:
         print(content_list)
-    prompt = gen_prompt(query,content_list,context_length_limit=7000,debug=debug)
+    prompt = gen_prompt(query,content_list,context_length_limit=6000,debug=debug)
     total_token =  ""
  
     for token in chat(prompt=prompt):
