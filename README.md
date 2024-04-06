@@ -38,7 +38,7 @@ This project is still in its very early days. Expect some bugs.
 ```bash
 git clone https://github.com/nashsu/FreeAskInternet.git
 cd ./FreeAskInternet
-docker-compose up 
+docker-compose up -d 
 ```
 
 🎉 You should now be able to open the web interface on http://localhost:3000. Nothing else is exposed by default.
@@ -51,7 +51,7 @@ cd ./FreeAskInternet
 git pull
 docker compose rm backend
 docker image rm nashsu/free_ask_internet
-docker-compose up 
+docker-compose up -d
 ```
  
 

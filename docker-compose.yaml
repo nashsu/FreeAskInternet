@@ -17,6 +17,7 @@ services:
       CUSTOM_MODELS: "-all,+gpt-3.5-turbo"
     depends_on:
       - freegpt35
+    restart: always
 
   freegpt35:
     image: missuo/freegpt35:latest
@@ -39,3 +40,4 @@ services:
       options:
         max-size: '1m'
         max-file: '1'
+    restart: always
