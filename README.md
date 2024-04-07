@@ -20,7 +20,7 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 - 👻 Runs WITHOUT LLM Hardware (NO GPU NEED!)
 - 🤩 Using Free ChatGPT3.5 API (NO API keys need! Thx OpenAI)
 - 🚀 Fast and easy to deploy with Docker Compose
-- 🌐 Web adn Mobile friendly interface, allowing for easy access from any device ( Thx ChatGPT-Next-Web )
+- 🌐 Web and Mobile friendly interface, allowing for easy access from any device ( Thx ChatGPT-Next-Web )
 
 ## How It Works? 
 
