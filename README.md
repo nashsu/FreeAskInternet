@@ -19,6 +19,20 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 - 🚀 Fast and easy to deploy with Docker Compose
 - 🌐 Web and Mobile friendly interface, designed for Web Search enhanced AI Chat, allowing for easy access from any device.
 
+## Screenshots
+
+1. index:
+
+![index](./doc/index.png)
+
+2. Search based AI Chat:
+
+![index](./doc/Screenshot-4.png)
+
+3. Multi LLM models and custom LLM like ollama support:
+
+![index](./doc/Screenshot-5.png)]
+
 ## How to get Kimi\Qwen\ZhipuAI token in setting
 
 We are using [https://github.com/LLM-Red-Team](https://github.com/LLM-Red-Team) projects to provide those service, you can reference to their readme.
