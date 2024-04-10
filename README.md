@@ -31,7 +31,7 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 
 3. Multi LLM models and custom LLM like ollama support:
 
-![index](./doc/Screenshot-5.png)]
+![index](./doc/Screenshot-5.png)
 
 ## How to get Kimi\Qwen\ZhipuAI token in setting
 
