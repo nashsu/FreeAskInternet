@@ -53,7 +53,7 @@ We are using [https://github.com/LLM-Red-Team](https://github.com/LLM-Red-Team) 
 
 Reference : [https://github.com/LLM-Red-Team/kimi-free-api](https://github.com/LLM-Red-Team/kimi-free-api)
 
-![setting token](./doc/example-3.png)
+![setting token](./doc/Screenshot-3.png)
 
 ## How to using custom LLM like ollama? (Yes we love ollama)
 
@@ -67,7 +67,7 @@ ollama serve
 2. set ollama url in setting:
 You MUST using your computer's ip address, not localhost/127.0.0.1, because in docker you can't access this address.
 The model name is the model you want to serve by ollama.
-![setting custom llm url](./doc/example-2.png)
+![setting custom llm url](./doc/Screenshot-2.png)
 
 ollama model Reference : [https://ollama.com/library](https://ollama.com/library)
 
