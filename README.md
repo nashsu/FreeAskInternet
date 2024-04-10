@@ -12,7 +12,7 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 
 - 🈚️ Completely FREE (no need for any API keys)
 - 💻 Completely LOCAL (no GPU need, any computer can run )
-- 🔐 Completely PRIVATE (all thing running locally)
+- 🔐 Completely PRIVATE (all thing running locally, using custom llm)
 - 👻 Runs WITHOUT LLM Hardware (NO GPU NEED!)
 - 🤩 Using Free ChatGPT3.5 / Qwen / Kimi / ZhipuAI(GLM) API (NO API keys need! Thx OpenAI)
 - 🐵 Custom LLM(ollama,llama.cpp) support, Yes we love ollama!
@@ -44,6 +44,32 @@ docker-compose up -d
 ```
 
 🎉 You should now be able to open the web interface on http://localhost:3000. Nothing else is exposed by default.( For old web interface, accessing  http://localhost:3030)
+
+## How to get and set Kimi / Qwen / ZhipuAI Token?
+
+How to get Token?
+
+We are using [https://github.com/LLM-Red-Team](https://github.com/LLM-Red-Team) projects to provide those service, you can reference to their readme.
+
+Reference : [https://github.com/LLM-Red-Team/kimi-free-api](https://github.com/LLM-Red-Team/kimi-free-api)
+
+![setting token](./doc/example-3.png)
+
+## How to using custom LLM like ollama? (Yes we love ollama)
+
+1. start ollama serve
+
+```bash
+export OLLAMA_HOST=0.0.0.0
+ollama serve
+```
+
+2. set ollama url in setting:
+You MUST using your computer's ip address, not localhost/127.0.0.1, because in docker you can't access this address.
+The model name is the model you want to serve by ollama.
+![setting custom llm url](./doc/example-2.png)
+
+ollama model Reference : [https://ollama.com/library](https://ollama.com/library)
 
 ### How to update to latest
 
