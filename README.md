@@ -16,7 +16,7 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 
 - 🈚️ Completely FREE (no need for any API keys)
 - 💻 Completely LOCAL (no GPU need, any computer can run )
-- 🔐 Completely PRIVATE (all thing runing locally)
+- 🔐 Completely PRIVATE (all thing running locally)
 - 👻 Runs WITHOUT LLM Hardware (NO GPU NEED!)
 - 🤩 Using Free ChatGPT3.5 API (NO API keys need! Thx OpenAI)
 - 🚀 Fast and easy to deploy with Docker Compose
@@ -41,7 +41,7 @@ cd ./FreeAskInternet
 docker-compose up -d 
 ```
 
-🎉 You should now be able to open the web interface on http://localhost:3000. Nothing else is exposed by default.
+🎉 You should now be able to open the web interface on http://localhost:3030. Nothing else is exposed by default.( For old web interface, accessing  http://localhost:3000)
 
 
 ### How to update to latest 
@@ -51,6 +51,7 @@ cd ./FreeAskInternet
 git pull
 docker compose rm backend
 docker image rm nashsu/free_ask_internet
+docker image rm nashsu/free_ask_internet_ui
 docker-compose up -d
 ```
  

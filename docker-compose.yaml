@@ -2,9 +2,19 @@ services:
   backend:
     image: docker.io/nashsu/free_ask_internet:latest
     depends_on:
-      - freegpt35
+      - llm-freegpt35
     restart: on-failure
  
+
+  freeaskinternet-ui:
+    image: docker.io/nashsu/free_ask_internet_ui:latest
+    ports:
+      - "3030:80"
+    environment:
+      BACKEND_HOST: "backend:8000"
+    depends_on:
+      - backend
+    restart: always
 
   chatgpt-next-web:
     image: yidadaa/chatgpt-next-web
@@ -16,12 +26,31 @@ services:
       BASE_URL: "http://backend:8000"
       CUSTOM_MODELS: "-all,+gpt-3.5-turbo"
     depends_on:
-      - freegpt35
+      - llm-freegpt35
     restart: always
 
-  freegpt35:
+  llm-freegpt35:
     image: missuo/freegpt35:latest
     restart: always
+
+  llm-kimi:
+    image: vinlic/kimi-free-api:latest
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+
+  llm-glm4:
+    image: vinlic/glm-free-api:latest
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+
+
+  llm-qwen:
+    image: vinlic/qwen-free-api:latest
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
 
   searxng:
     image: docker.io/searxng/searxng:latest
