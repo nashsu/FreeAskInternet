@@ -41,7 +41,7 @@ cd ./FreeAskInternet
 docker-compose up -d 
 ```
 
-🎉 You should now be able to open the web interface on http://localhost:3030. Nothing else is exposed by default.( For old web interface, accessing  http://localhost:3000)
+🎉 You should now be able to open the web interface on http://localhost:3000. Nothing else is exposed by default.( For old web interface, accessing  http://localhost:3030)
 
 
 ### How to update to latest 

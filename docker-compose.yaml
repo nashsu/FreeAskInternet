@@ -9,7 +9,7 @@ services:
   freeaskinternet-ui:
     image: docker.io/nashsu/free_ask_internet_ui:latest
     ports:
-      - "3030:80"
+      - "3000:80"
     environment:
       BACKEND_HOST: "backend:8000"
     depends_on:
@@ -19,7 +19,7 @@ services:
   chatgpt-next-web:
     image: yidadaa/chatgpt-next-web
     ports:
-      - "3000:3000"
+      - "3030:3000"
     environment:
       OPENAI_API_KEY: "FreeAskInternet"
       # CODE: "FreeAskInternet" # 如果你想要设置页面的访问密码，请修改这里
