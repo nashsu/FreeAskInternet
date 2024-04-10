@@ -33,17 +33,12 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 
 ![index](./doc/Screenshot-5.png)
 
-## How to get Kimi\Qwen\ZhipuAI token in setting
-
-We are using [https://github.com/LLM-Red-Team](https://github.com/LLM-Red-Team) projects to provide those service, you can reference to their readme.
-
-Reference : [https://github.com/LLM-Red-Team/kimi-free-api](https://github.com/LLM-Red-Team/kimi-free-api)
-
 ## How It Works?
 
-1. System get user input question in ChatGPT-Next-Web ( running locally), and call searxng (running locally) to make search on multi search engine.
-2. crawl search result links content and pass to ChatGPT3.5 (using OpenAI ChatGPT3.5, through FreeGPT35 running locally), ask ChatGPT3.5 to answer user question based on this contents as references.
-3. Stream the answer to ChatGPT-Next-Web Chat UI.
+1. System get user input question in FreeAskInternet UI interface( running locally), and call searxng (running locally) to make search on multi search engine.
+2. crawl search result links content and pass to ChatGPT3.5 / Kimi / Qwen / ZhipuAI / ollama (by using custom llm), ask LLM to answer user question based on this contents as references.
+3. Stream the answer to Chat UI.
+4. We support custom LLM setting, so theoretically infinite llm support.
 
 ## Status
 
