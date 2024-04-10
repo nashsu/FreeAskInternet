@@ -22,6 +22,8 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 - 🚀 Fast and easy to deploy with Docker Compose
 - 🌐 Web and Mobile friendly interface, allowing for easy access from any device ( Thx ChatGPT-Next-Web )
 
+
+
 ## How It Works? 
 
 1. System get user input question in ChatGPT-Next-Web ( running locally), and call searxng (running locally) to make search on multi search engine.
@@ -49,6 +51,7 @@ docker-compose up -d
 ```bash
 cd ./FreeAskInternet
 git pull
+docker compose down
 docker compose rm backend
 docker image rm nashsu/free_ask_internet
 docker image rm nashsu/free_ask_internet_ui
