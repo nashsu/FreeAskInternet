@@ -23,6 +23,10 @@ FreeAskInternet is a completely free, private and locally running search aggrega
 - 🌐 Web and Mobile friendly interface, allowing for easy access from any device ( Thx ChatGPT-Next-Web )
 
 
+## How to get Kimi\Qwen\ZhipuAI token in setting
+We are using https://github.com/LLM-Red-Team projects to provide those service, you can reference to their readme:
+Reference : [https://github.com/LLM-Red-Team/kimi-free-api](https://github.com/LLM-Red-Team/kimi-free-api)
+
 
 ## How It Works? 
 
@@ -63,6 +67,7 @@ docker-compose up -d
 ## Credits
 - ChatGPT-Next-Web : [https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
 - FreeGPT35: [https://github.com/missuo/FreeGPT35](https://github.com/missuo/FreeGPT35)
+- Kimi\Qwen\ZhipuAI [https://github.com/LLM-Red-Team](https://github.com/LLM-Red-Team)
 - searxng: [https://github.com/searxng/searxng](https://github.com/searxng/searxng)
 
 ## License
