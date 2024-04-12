@@ -2,7 +2,7 @@
 
 ## 🎉🎉🎉 Yeah we have a logo now! 🎉🎉🎉
 
-![lgoo](./doc/logo.png)
+![lgoo](./doc/logo-20240412.png)
 
 > Running www.perplexity.ai like app complete FREE, LOCAL, PRIVATE and NO GPU NEED on any computer
 > [!IMPORTANT]  
