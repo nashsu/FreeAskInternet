@@ -107,6 +107,10 @@ docker-compose up -d
 
 [AdlerMurcus](https://github.com/AdlerMurcus)
 
+<a href="https://github.com/AdlerMurcus">
+  <img src="https://avatars.githubusercontent.com/u/40649955?v=4" width="100" height="100" class="avatar avatar-user width-full border color-bg-default"/>
+</a>
+
 ## License
 
 Apache-2.0 license
