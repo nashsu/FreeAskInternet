@@ -1,5 +1,9 @@
 # FreeAskInternet
 
+## 🎉🎉🎉 Yeah we have a logo now! 🎉🎉🎉
+
+![lgoo](./doc/logo.png)
+
 > Running www.perplexity.ai like app complete FREE, LOCAL, PRIVATE and NO GPU NEED on any computer
 > [!IMPORTANT]  
 > **If you are unable to use this project normally, it is most likely due to issues with your internet connection or your IP, you need free internet connection to use this project normally. 如果您无法正常使用此项目，很可能是由于您的 IP 存在问题，或者你不能自由访问互联网。**
@@ -98,6 +102,10 @@ docker-compose up -d
 - FreeGPT35: [https://github.com/missuo/FreeGPT35](https://github.com/missuo/FreeGPT35)
 - Kimi\Qwen\ZhipuAI [https://github.com/LLM-Red-Team](https://github.com/LLM-Red-Team)
 - searxng: [https://github.com/searxng/searxng](https://github.com/searxng/searxng)
+
+## Special thanks to our logo designer
+
+[AdlerMurcus](https://github.com/AdlerMurcus)
 
 ## License
 
