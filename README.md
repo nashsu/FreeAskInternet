@@ -91,6 +91,7 @@ cd ./FreeAskInternet
 git pull
 docker compose down
 docker compose rm backend
+docker compose rm free_ask_internet_ui
 docker image rm nashsu/free_ask_internet
 docker image rm nashsu/free_ask_internet_ui
 docker-compose up -d
