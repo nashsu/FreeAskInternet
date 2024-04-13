@@ -189,7 +189,7 @@ def chat(prompt, model:str,llm_auth_token:str,llm_base_url:str,using_custom_llm=
 
     if using_custom_llm:
         openai.base_url = llm_base_url
-        openai.api_key = "CUSTOM"
+        openai.api_key = llm_auth_token
 
 
     total_content = ""
